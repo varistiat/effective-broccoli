@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- ==========================================
+                  BASIC META
+  =========================================== -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>A Little Place For Us</title>
+
+  <!-- ==========================================
+                  GOOGLE FONTS
+  =========================================== -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- ==========================================
+                LOADING SCREEN
+=========================================== -->
+
+<div id="loader">
+
+  <div class="loader-content">
+
+    <h1 class="loader-title">
+      Loading, hope you like it...
+    </h1>
+
+    <div class="loader-bar">
+
+      <div class="loader-progress"></div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ==========================================
+            BACKGROUND DECORATIONS
+=========================================== -->
+
+<div class="background-blobs">
+
+  <span class="blob blob1"></span>
+  <span class="blob blob2"></span>
+  <span class="blob blob3"></span>
+
+</div>
+
+<!-- ==========================================
+                HERO SECTION
+=========================================== -->
+
+<section id="hero">
+
+  <div class="hero-content">
+
+    <p class="hero-small">
+      made with love and javascript &hearts;
+    </p>
+
+    <h1 class="hero-title">
+      A Place
+      <br>
+      For Us
+    </h1>
+
+    <p class="hero-subtitle">
+
+      Could've written a Letter
+
+      <br>
+
+      But I ain't Certain about the Future
+
+    </p>
+
+    <button id="begin-btn">
+
+      Open &rarr;
+
+    </button>
+
+  </div>
+
+</section>
+
+<nav class="sidebar" aria-label="Story navigation">
+
+  <div class="sidebar-handle">
+    &hearts;
+  </div>
+
+  <div class="sidebar-content">
+
+    <ul>
+      <li>
+        <a href="#timeline">Home</a>
+      </li>
+
+      <li>
+        <a href="#note-spread">Love Letter</a>
+      </li>
+
+      <li>
+        <a href="#next-page">Memory Wall</a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</nav>
+
+<section id="timeline" class="story-section">
+
+  <div class="chapter-page">
+
+    <div class="chapter-text">
+
+      <span class="chapter-label">
+        Home &hearts;
+      </span>
+
+      <h2>
+        Made a Place to
+        <br>
+        Store Our Memories
+      </h2>
+
+      <p>
+        The entire world is a collection of memoranda
+        <br>
+        that she did exist, and that I have lost her.
+
+      </p>
+
+      <div class="chapter-note">
+        Whatever our souls are made of,
+        hers and mine are the same.
+      </div>
+
+    </div>
+
+    <div class="scrapbook-collage">
+
+      <div class="polaroid polaroid-1">
+        <div class="tape"></div>
+        <img src="/images/gallery/photocnavs.jpg" alt="photocnavs" class="photo-placeholder">
+        <span class="polaroid-caption"></span>
+      </div>
+
+      <div class="polaroid polaroid-2">
+        <div class="tape"></div>
+        <img src="/images/gallery/hiposenter.jpg" alt="hiposenter" class="photo-placeholder">
+        <span class="polaroid-caption">Hippo</span>
+      </div>
+
+      <div class="polaroid polaroid-3">
+        <div class="tape"></div>
+        <img src="/images/gallery/attitudehug.jpg" alt="attitudehug" class="photo-placeholder">
+        <span class="polaroid-caption">Mad on me?</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="note-spread" class="story-section">
+
+  <div class="letter-scene">
+
+    <!-- left: heading -->
+    <div class="letter-scene-header">
+      <span class="chapter-label">A Love Letter &hearts;</span>
+      <h2 class="letter-scene-title">Something I&nbsp;wrote<br>for you</h2>
+      <p class="letter-scene-sub">Every word in here is real. Open it when you're ready.</p>
+    </div>
+
+    <!-- right: fixed card that flips between envelope face and letter face -->
+    <div class="letter-stage" id="letter-stage">
+
+      <!-- FACE 1: envelope -->
+      <button class="env-face" id="envelope" type="button" aria-label="Open letter">
+        <div class="env-flap"></div>
+        <div class="env-fold-left"></div>
+        <div class="env-fold-right"></div>
+        <div class="env-fold-bottom"></div>
+        <div class="wax-seal" aria-hidden="true">&#10084;</div>
+        <span class="letter-hint">tap to open</span>
+      </button>
+
+      <!-- FACE 2: letter -->
+      <div class="ltr-face" id="ltr-face" aria-hidden="true">
+        <div class="ltr-inner">
+          <p class="letter-kicker">a little note</p>
+          <p class="letter-body">
+            If I could pin one feeling to this page, it would be the comfort of finding someone who makes ordinary moments feel rare.
+          </p>
+          <p class="letter-body">
+            I do not want this to feel like clicking through slides. I want each part of us to have its own room to breathe, like turning to the next page of something handmade.
+          </p>
+          <p class="letter-body">
+            So this page stays quiet on purpose — soft paper, a small note, and enough space for the feeling to land.
+          </p>
+          <p class="letter-sign">with love &hearts;</p>
+          <div class="letter-close-row">
+            <button class="letter-close-btn" id="letter-close-btn" type="button">
+              Fold back &darr;
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="next-page" class="story-section story-section-outro">
+
+  <div class="memory-wall-shell">
+    <div class="memory-wall-header">
+      <div>
+        <span class="section-intro-label">Visual memory wall</span>
+        <h2>Little frames for the moments we keep replaying.</h2>
+      </div>
+      <p>
+        Tap any memory to open it larger.
+      </p>
+    </div>
+
+    <div class="memory-wall-grid" aria-label="Visual memory wall">
+
+      <button class="memory-tile memory-tile-large" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <img src="/images/gallery/1stMCD.jpg" alt="1stMCD" class="memory-media">
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Photo</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <img src="/images/gallery/altitudehug.jpg" alt="altitudehug" class="memory-media">
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Photo</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile memory-tile-large" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <video src="/images/gallery/activarollin.mp4" class="memory-media" preload="metadata" muted playsinline></video>
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Video</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <img src="/images/gallery/benched.jpg" alt="benched" class="memory-media">
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Photo</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <img src="/images/gallery/circle.jpg" alt="circle" class="memory-media">
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Photo</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <img src="/images/gallery/dogfilter.jpg" alt="dogfilter" class="memory-media">
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Photo</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile memory-tile-large" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <video src="/images/gallery/capybarapuddin.mp4" class="memory-media" preload="metadata" muted playsinline></video>
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Video</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <img src="/images/gallery/dominoshug.jpg" alt="dominoshug" class="memory-media">
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Photo</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <img src="/images/gallery/dryrose.jpg" alt="dryrose" class="memory-media">
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Photo</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <img src="/images/gallery/fightnkiss.jpg" alt="fightnkiss" class="memory-media">
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Photo</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile memory-tile-large" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <video src="/images/gallery/cocacolakiss.mp4" class="memory-media" preload="metadata" muted playsinline></video>
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Video</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <img src="/images/gallery/herbalkiss.jpg" alt="herbalkiss" class="memory-media">
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Photo</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <img src="/images/gallery/jawline.jpg" alt="jawline" class="memory-media">
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Photo</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile memory-tile-large" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <video src="/images/gallery/firstvideever.mp4" class="memory-media" preload="metadata" muted playsinline></video>
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Video</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <img src="/images/gallery/MatchinHair.jpg" alt="MatchinHair" class="memory-media">
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Photo</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <img src="/images/gallery/rossesnigga.jpg" alt="rossesnigga" class="memory-media">
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Photo</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <img src="/images/gallery/swastihugtoo.jpg" alt="swastihugtoo" class="memory-media">
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Photo</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+      <button class="memory-tile memory-tile-large" type="button" data-memory-title="black space">
+        <span class="memory-pin"></span>
+        <video src="/images/gallery/karanpasandhai.mp4" class="memory-media" preload="metadata" muted playsinline></video>
+        <span class="memory-tile-meta">
+          <span class="memory-kicker">Video</span>
+          <span class="memory-caption">black space</span>
+        </span>
+      </button>
+
+    </div>
+  </div>
+
+</section>
+
+<div class="memory-lightbox" aria-hidden="true">
+  <button class="memory-lightbox-close" type="button" aria-label="Close expanded memory">&times;</button>
+  <div class="memory-lightbox-dialog" role="dialog" aria-modal="true" aria-label="Expanded memory"></div>
+</div>
+
+<!-- ==========================================
+                JAVASCRIPT
+=========================================== -->
+
+<script type="module" src="/src/main.js"></script>
+
+</body>
+</html>
